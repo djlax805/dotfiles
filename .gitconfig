@@ -1,0 +1,18 @@
+[user]
+	name = DJ DeStefano
+	email = daniel.s.destefano@gmail.com
+[core]
+	editor = vim
+
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
+[push]
+	default = matching
+
+[credential]
+	helper = osxkeychain
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)< %an >%Creset' --abbrev-commit
+	add-commit = !git add -A && git commit
+	ac = !git add -A && git commit
